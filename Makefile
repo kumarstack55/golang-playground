@@ -1,4 +1,4 @@
-TARGET=$(addprefix ./output/,$(basename $(wildcard *.go)))
+TARGET=$(addprefix ./output/,$(basename $(wildcard basics/*.go)))
 
 all: $(TARGET)
 
