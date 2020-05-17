@@ -1,4 +1,5 @@
-TARGET=$(addprefix ./output/,$(basename $(wildcard basics/*.go)))
+TARGET=$(addprefix ./output/,$(basename $(wildcard 01_basics/*.go))) \
+	$(addprefix ./output/,$(basename $(wildcard 02_flowcontrol/*.go)))
 
 all: $(TARGET)
 
